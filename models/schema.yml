@@ -106,4 +106,33 @@ sources:
             description: cout d'achat
           - name: margin
             description: marge du jour
-
+      - name: campaigns
+        identifier: int_campaigns
+        description: all the campaigns regroup in one wiew
+        columns:
+          - name: date_date
+            description: date of the campaign
+          - name: paid_source
+            description: Company used to lauch the ads
+          - name: campaign_key
+            description: key of the campaign
+          - name: campaign_name
+            description: Name of the campaign
+          - name: ads_cost
+            description: cost of the ads
+          - name: impression
+            description: number of impressions(views)
+          - name: click
+            description: number of clicks
+      - name: campaings_day
+        identifier: int_campaigns_day
+        description: aggregation by date
+        columns:
+          - name: date_date
+            description: date of the ads
+          - name: ads_cost
+            description: ads cost of the day
+          - name: ads_impression
+            description: number of views of the ads during this day
+          - name: ads_clicks
+            description: number of clicks on the ads during the day
