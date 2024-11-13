@@ -9,7 +9,7 @@ EXTRACT(MONTH FROM date_date) AS datemonth
 ,ROUND(SUM(quantity), 2) AS quantity  
 ,ROUND(SUM(revenue), 2) AS revenue
 ,ROUND(SUM(purchase_cost), 2) AS purchase_cost
-,ROUND(SUM(margin), 2) AS ads_margin
+,ROUND(SUM(margin), 2) AS margin
 ,ROUND(SUM(shipping_fee), 2) AS shipping_fee
 ,ROUND(SUM(logcost), 2) AS logcost
 FROM {{ ref('finance_campaigns_day') }}
