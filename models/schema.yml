@@ -44,4 +44,27 @@ sources:
           - name: shipping_fee
           - name: logcost
           - name: ship_cost
-                  
+
+  - name: intermediate
+    tables:
+      - name: sales_margin
+        identifier: int_sales_margin
+        description: calcule du purchase cost & de la marge
+        columns:
+          - name: orders_id
+            description: number of the id
+          - name: products_id
+            description: id of the products
+          - name: date_date
+            description: la date
+          - name: revenue
+            description: le revenu du jour
+          - name: quantity
+            description: la quantité vendu
+          - name: purchase_price
+            description: prix
+          - name: purchase_cost
+            description: cout d'achat
+          - name: margin
+            description: marge du jour
+
